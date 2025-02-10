@@ -1,0 +1,106 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorTransparency</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="backgroundColor">@color/colorWhite</item>
+
+        <!-- 타이틀바 없애기        -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--  상태바 없애기         -->
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+
+    <style name="LisenceTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorMaincolor</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="backgroundColor">@color/colorWhite</item>
+
+        <!--  상태바 없애기         -->
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorTransparency</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="backgroundColor">@color/colorBlack_lite</item>
+
+
+        <!-- 타이틀바 없애기        -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--  상태바 없애기         -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+
+    <!-- 다이어로그 스타일-->
+    <style name="AlertDialog" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorMaincolor</item>
+        <item name="backgroundColor">@color/colorWhite</item>
+    </style>
+
+
+    <style name="DarkAlertDialog" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="backgroundColor">@color/colorBlack_lite</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorMaincolor</item>
+        <item name="android:itemTextAppearance">@color/colorWhite</item>
+    </style>
+
+
+
+    <style name="AlertDialog02" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorMaincolor</item>
+        <item name="backgroundColor">@color/colorWhite</item>
+    </style>
+
+    <style name="sw_mainColor">
+        <item name="colorControlActivated">@color/SwichOncolor</item>
+    </style>
+
+
+
+<!--    <style name="AlertDialog03" parent="@android:style/Theme.Holo.Dialog.NoActionBar">-->
+<!--        <item name="android:alertDialogStyle">@style/DarkDialog</item>-->
+<!--    </style>-->
+
+<!--    <style name="DarkDialog">-->
+<!--        <item name="android:textColor">@color/colorWhite</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorWhite</item>-->
+<!--        <item name="colorAccent">@color/colorMaincolor</item>-->
+<!--        <item name="android:itemTextAppearance">@color/colorWhite</item>-->
+<!--        <item name="android:textColorAlertDialogListItem">@color/colorWhite</item>-->
+<!--        <item name="android:textColorSecondary">@color/colorWhite</item>-->
+
+<!--        <item name="android:textAppearance">@color/colorWhite</item>-->
+<!--        <item name="android:textColorPrimary">@color/colorWhite</item>-->
+<!--    </style>-->
+
+
+
+<!--다이얼로그 상속-->
+<!-- parent="Base.Theme.AppCompat.Light.Dialog">-->
+
+
+
+
+</resources>

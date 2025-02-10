@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/themesetting_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="650"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="left|center"
+        android:background="@drawable/mainmenubar"
+        >
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_weight="10"
+            android:textColor="#5586EB"
+            android:textStyle="bold"
+            android:text="테마 설정"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="80"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical|center"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:src="@drawable/whitetheme"
+                android:gravity="center_vertical|center"
+                />
+            <!--        <TextView-->
+            <!--            android:id="@+id/customlist_Data"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:layout_weight="40"-->
+            <!--            android:paddingLeft="10dp"-->
+            <!--            />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:textSize="15sp"
+                        android:text="화이트"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical|right"
+                    >
+                    <RadioButton
+                        android:id="@+id/themesetting_wrb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical|center"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:textColor="@color/colorMaincolor"
+                android:paddingStart="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:src="@drawable/whitetheme"
+                android:gravity="center_vertical|center"
+                />
+            <!--        <TextView-->
+            <!--            android:id="@+id/customlist_Data"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:layout_weight="40"-->
+            <!--            android:paddingLeft="10dp"-->
+            <!--            />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:textSize="15sp"
+                        android:text="블랙"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical|right"
+                    >
+                    <RadioButton
+                        android:id="@+id/themesetting_brb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

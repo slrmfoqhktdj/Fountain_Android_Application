@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/alramsetting_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="650"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="left|center"
+        android:background="@drawable/mainmenubar"
+        >
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_weight="10"
+            android:textColor="#5586EB"
+            android:textStyle="bold"
+            android:text="알림 설정"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="80"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/alarmsetting_existswitchbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="알림"
+                android:textSize="25sp"
+                android:textColor="@color/colorMaincolor"
+                android:theme="@style/sw_mainColor"
+                android:layout_weight="3"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/alarmsetting_showswitchbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="알림 표시"
+                android:textSize="25sp"
+                android:textColor="@color/colorMaincolor"
+                android:theme="@style/sw_mainColor"
+                android:layout_weight="3"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/alarmsetting_soundswitchbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="소리"
+                android:textSize="25sp"
+                android:textColor="@color/colorMaincolor"
+                android:theme="@style/sw_mainColor"
+                android:layout_weight="3"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/alarmsetting_vibeswitchbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="진동"
+                android:textSize="25sp"
+                android:textColor="@color/colorMaincolor"
+                android:theme="@style/sw_mainColor"
+                android:layout_weight="3"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/alarmsetting_vibepatternTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorMaincolor"
+                    android:text="진동 패턴"/>
+                <TextView
+                    android:id="@+id/alarmsetting_vibepatternTv_sm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:gravity="right|center"
+                    android:layout_weight="7"
+                    android:layout_marginEnd="10dp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            >
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

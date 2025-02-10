@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customlist_main"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="75"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_vertical|center"
+        >
+
+        <TextView
+            android:id="@+id/customlist_Title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:textColor="@color/colorMaincolor"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center_vertical|center"
+            />
+<!--        <TextView-->
+<!--            android:id="@+id/customlist_Data"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="40"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:orientation="horizontal"
+            >
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center"
+                    android:text="동작"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/customlist_onoff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="물용량"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical|center"
+                    />
+                <TextView
+                    android:id="@+id/customlist_water"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorMaincolor"
+                    android:gravity="center_vertical|center"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="오류"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical|center"
+                    />
+                <ImageView
+                    android:id="@+id/customlist_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center"
+                    android:layout_margin="5dp"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

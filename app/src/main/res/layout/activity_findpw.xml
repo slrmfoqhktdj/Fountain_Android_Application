@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="350dp"
+    android:background="@drawable/idcreatpagebg"
+    android:id="@+id/findpwmain"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:background="@drawable/idcreatpagebn"
+        android:textSize="20sp"
+        android:text="비밀번호 찾기"
+        android:layout_weight="21.9"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        />
+
+    <ScrollView
+        android:id="@+id/createidchecknextsv_b"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:layout_margin="10dp"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/findpwidtv"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textSize="15sp"
+                android:layout_weight="3.2"
+                android:gravity="bottom|left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="아이디"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/findpwid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:background="@drawable/edtunderline"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3.2"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:id="@+id/findpwemailtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textSize="15sp"
+                    android:layout_weight="3.2"
+                    android:gravity="bottom|left"
+                    android:textStyle="bold"
+                    android:text="이메일"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorAlert"
+                    android:gravity="bottom|right"
+                    android:text="가입시 등록했던 이메일을 기입해주세요"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/findpwemail01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="15sp"
+                    android:background="@drawable/edtunderline"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4.5"
+                    android:textSize="15sp"
+                    android:text=" @ "
+                    android:gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/findpwemail02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="15sp"
+                    android:background="@drawable/edtunderline"
+                    android:hint="직접 입력"
+                    />
+                <Spinner
+                    android:id="@+id/findpwemailspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.3"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3.2"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:id="@+id/findpwtelltv"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textSize="15sp"
+                    android:layout_weight="3.2"
+                    android:textStyle="bold"
+                    android:text="전화번호"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorAlert"
+                    android:gravity="bottom|right"
+                    android:text="가입시 등록했던 전화번호를 기입해주세요"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/findpwtell01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:textSize="15sp"
+                    android:background="@drawable/edtunderline"
+                    android:maxLength="3"
+                    android:inputType="numberDecimal"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:gravity="center"
+                   />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="-"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/findpwtell02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:textSize="15sp"
+                    android:background="@drawable/edtunderline"
+                    android:maxLength="4"
+                    android:inputType="numberDecimal"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="-"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/findpwtell03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:textSize="15sp"
+                    android:background="@drawable/edtunderline"
+                    android:maxLength="4"
+                    android:inputType="numberDecimal"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:gravity="center"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="3"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/findpwOk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="비밀번호찾기"
+                    android:background="@drawable/loginbutton"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

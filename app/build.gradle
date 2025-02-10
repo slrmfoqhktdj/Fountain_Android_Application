@@ -1,0 +1,106 @@
+
+plugins{
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.android.gms.oss-licenses-plugin'
+}
+//apply plugin: 'com.android.application'
+//apply plugin: 'com.google.android.gms.oss-licenses-plugin'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.example.swipeviewex01"
+        minSdkVersion 21
+        targetSdkVersion 31
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+        ndk {
+//            abiFilters "armeabi-v7a","arm64-v8a","x86"
+//            abiFilters "armeabi"
+        }
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+}
+
+dependencies {
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //socket.io
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.6'
+    implementation group: 'io.socket', name: 'socket.io-client', version: '1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+    //tabLayout
+    implementation 'com.google.android.material:material:1.4.0'
+
+    implementation "org.jsoup:jsoup:1.10.2"
+    implementation "javax.xml.bind:jaxb-api:2.2.11"
+    implementation "com.sun.xml.bind:jaxb-core:2.2.11"
+    implementation "com.sun.xml.bind:jaxb-impl:2.2.11"
+    implementation "javax.activation:activation:1.1.1"
+    implementation group: 'xerces',name: 'xercesImpl',version: '2.12.0'
+
+    implementation 'androidx.room:room-runtime:2.4.0'
+    kapt 'androidx.room:room-compiler:2.4.0'
+    implementation 'androidx.room:room-rxjava2:2.4.0'
+
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.4.0"
+    implementation "androidx.lifecycle:lifecycle-runtime:2.4.0"
+
+    //비동기,동기등 지원
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.19'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    implementation 'com.android.support:multidex:2.0.1'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+    //업데이트
+    implementation 'com.google.android.play:core:1.10.2'
+
+    //누수테스트
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.6'
+
+    //오픈소스 라이센스
+    implementation 'com.google.android.gms:play-services-oss-licenses:17.0.0'
+//    implementation 'com.google.android.gms:play-services-base:18.0.1'
+//    implementation 'com.google.android.gms:play-services-tasks:18.0.1'
+
+
+}

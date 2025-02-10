@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="400dp"
+    android:background="@drawable/idcreatpagebg"
+    android:id="@+id/createidinput_main"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:background="@drawable/idcreatpagebn"
+        android:textSize="20sp"
+        android:text="회원가입"
+        android:layout_weight="21.9"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        />
+
+    <ScrollView
+        android:id="@+id/createidchecknextsv_b"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:layout_margin="10dp"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/custominputidtv"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textSize="15sp"
+                android:layout_weight="3.2"
+                android:gravity="bottom|left"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:text="아이디"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/custominputid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:textSize="15sp"
+                    android:background="@drawable/edtunderline"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:hint="3~9자리"
+                    />
+                <Button
+                    android:id="@+id/idoverlap"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:background="@drawable/loginbutton"
+                    android:textSize="15sp"
+                    android:text="중복확인"
+                    android:textColor="@color/colorWhite"
+                    />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/custominputpasswardtv"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textSize="15sp"
+                android:layout_weight="3.2"
+                android:gravity="bottom|left"
+
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="비밀번호"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/custominputpassward"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:layout_weight="3.1"
+                android:textSize="15sp"
+                android:background="@drawable/edtunderline"
+                android:textColor="?attr/colorPrimaryDark"
+                android:hint="6~9자리 숫자,영문조합"/>
+
+            <TextView
+                android:id="@+id/customconfirmpasswardtv"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textSize="15sp"
+                android:layout_weight="3.2"
+                android:gravity="bottom|left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="비밀번호 확인"/>
+            <EditText
+                android:id="@+id/customconfirmpassward"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:layout_weight="3.1"
+                android:textSize="15sp"
+                android:background="@drawable/edtunderline"
+                android:textColor="?attr/colorPrimaryDark"
+                android:hint="6~9자리 숫자,영문조합"/>
+
+
+
+
+                <TextView
+                    android:id="@+id/custominputemailtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textSize="15sp"
+                    android:layout_weight="3"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="bottom|left"
+                    android:textStyle="bold"
+                    android:text="이메일"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorAlert"
+                    android:gravity="bottom|left"
+                    android:layout_marginBottom="5dp"
+                    android:text="아이디,비밀번호 분실 시 등록된 정보로 찾기에 정확히 기입해주세요."
+                    />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/custominputemail01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:textSize="15sp"
+                    android:background="@drawable/edtunderline"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:hint="Gildong"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4.5"
+                    android:textSize="15sp"
+                    android:text=" @ "
+                    android:gravity="center"
+                   />
+                <EditText
+                    android:id="@+id/custominputemail02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:textSize="15sp"
+                    android:background="@drawable/edtunderline"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:hint="직접 입력"/>
+                <Spinner
+                    android:id="@+id/custominputemailspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.3"/>
+<!-- sipnner 배경색                   android:popupBackground="@color/colorWhite"-->
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/customtelltv"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textSize="15sp"
+                android:layout_weight="3.2"
+                android:gravity="bottom|left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="전화번호"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:textColor="@color/colorAlert"
+                android:gravity="bottom|left"
+                android:layout_marginBottom="5dp"
+                android:text="아이디,비밀번호 분실 시 등록된 정보로 찾기에 정확히 기입해주세요."
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/customtell01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:textSize="15sp"
+                    android:background="@drawable/edtunderline"
+                    android:gravity="center"
+                    android:maxLength="3"
+                    android:inputType="numberDecimal"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:hint="010"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="-"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/customtell02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:textSize="15sp"
+                    android:background="@drawable/edtunderline"
+                    android:gravity="center"
+                    android:maxLength="4"
+                    android:inputType="numberDecimal"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:hint="0000"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="-"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/customtell03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:textSize="15sp"
+                    android:background="@drawable/edtunderline"
+                    android:gravity="center"
+                    android:maxLength="4"
+                    android:inputType="numberDecimal"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:hint="0000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="3"
+                android:gravity="right">
+                <Button
+                    android:id="@+id/customCencle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:text="취소" />
+
+                <Button
+                    android:id="@+id/customOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:text="가입하기"
+                    android:background="@drawable/loginbutton"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

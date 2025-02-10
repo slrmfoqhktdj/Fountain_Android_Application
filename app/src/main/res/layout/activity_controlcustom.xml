@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/control_main"
+    android:layout_width="360dp"
+    android:layout_height="550dp"
+    android:background="@drawable/idcreatpagebg"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:background="@drawable/idcreatpagebn"
+        android:textSize="20sp"
+        android:text="조작하기"
+        android:textStyle="bold"
+        android:layout_weight="21.9"
+        android:textColor="@color/colorWhite"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="3"
+            >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <LinearLayout
+            android:id="@+id/second_showname_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorMaincolor"
+                android:id="@+id/second_showname_tv"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:id="@+id/second_waterstate_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:text="물용량"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:gravity="center_vertical|center"
+                        />
+                    <TextView
+                        android:id="@+id/second_waterstate_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorMaincolor"
+                        android:gravity="center_vertical|center"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    >
+                    <ImageView
+                        android:id="@+id/second_waterstate_imgv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|center"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                />
+            <LinearLayout
+                android:id="@+id/second_start_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1.2"
+                    android:text="동작"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical|center"
+                    />
+                <ImageView
+                    android:id="@+id/second_start_imgv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="top|center"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                />
+            <LinearLayout
+                android:id="@+id/second_error_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:text="오류"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical|center"
+                    />
+                <ImageView
+                    android:id="@+id/second_error_imgv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:gravity="top|center"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:id="@+id/second_step_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="강도"
+                        android:layout_weight="1.4"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:gravity="center_vertical|center"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/step1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="1"
+                            android:layout_weight="1.4"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_margin="3dp"
+                            android:gravity="center_vertical|center"
+
+                            />
+                        <TextView
+                            android:id="@+id/step2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="2"
+                            android:layout_weight="1.4"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_margin="3dp"
+                            android:gravity="center_vertical|center"
+
+                            />
+                        <TextView
+                            android:id="@+id/step3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="3"
+                            android:layout_weight="1.4"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_margin="3dp"
+                            android:gravity="center_vertical|center"
+
+                            />
+                        <TextView
+                            android:id="@+id/step4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="4"
+                            android:layout_weight="1.4"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_margin="3dp"
+                            android:gravity="center_vertical|center"
+
+                            />
+                        <TextView
+                            android:id="@+id/step5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="5"
+                            android:layout_weight="1.4"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_margin="3dp"
+                            android:gravity="center_vertical|center"
+
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/second_mode_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="모드"
+                        android:layout_weight="1.4"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:gravity="center_vertical|center"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/automode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="오토"
+                            android:layout_weight="1.4"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_margin="3dp"
+                            android:gravity="center_vertical|center"
+
+                            />
+                        <TextView
+                            android:id="@+id/custommode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="커스텀"
+                            android:layout_weight="1.4"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_margin="3dp"
+                            android:gravity="center_vertical|center"
+
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/second_error_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:textColor="#F15F5F"
+                />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/updatecheck_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="650"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="left|center"
+        android:background="@drawable/mainmenubar"
+        >
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_weight="10"
+            android:textColor="#5586EB"
+            android:textStyle="bold"
+            android:text="업데이트"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="80"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="버전 정보"
+            android:textSize="15sp"
+            android:gravity="center|center_vertical"
+           />
+        <TextView
+            android:id="@+id/ud_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.0.0"
+            android:textSize="15sp"
+            android:gravity="center|top" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="오픈소스 라이센스"
+            android:textSize="15sp"
+            android:gravity="center|center_vertical"
+            />
+        <TextView
+            android:id="@+id/ud_opensource"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opensourceshow"
+            android:textSize="15sp"
+            android:gravity="center|top" />
+
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>

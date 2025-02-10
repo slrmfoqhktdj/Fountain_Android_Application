@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="email_array">
+        <item>선택하기</item>
+        <item>naver.com</item>
+        <item>gmail.com</item>
+        <item>empal.com</item>
+        <item>netian.com</item>
+        <item>nate.com</item>
+        <item>korea.com</item>
+        <item>hanmail.net</item>
+        <item>chol.com</item>
+        <item>intizen.com</item>
+        <item>freechal.com</item>
+        <item>teramail.com</item>
+    </string-array>
+
+</resources>
